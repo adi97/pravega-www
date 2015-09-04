@@ -5,7 +5,7 @@ import { createHistory } from 'history';
 
 import { Menubar, Home, Schedule, News,
          Hospitality, Sponsors, Contact,
-         Login, Sidebar, Footer } from './components';
+         Login, Sidebar, Footer, CampusAmbassador } from './components';
 
 import './styles/main.css';
 
@@ -40,6 +40,7 @@ const AppRouter = (
       <Route path="contact" component={Contact} />
       <Route path="sponsors" component={Sponsors} />
       <Route path="login" component={Login} />
+      <Route path="campusAmbassador" component={CampusAmbassador} />
     </Route>
   </Router>
 );
