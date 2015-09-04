@@ -10,7 +10,7 @@ import Login from './Login.js';
 
 import Sidebar from './Sidebar.js';
 import Footer from './Footer.js';
-
+import Feedback from './Feedback.js';
 
 export {
   Home,
@@ -22,5 +22,6 @@ export {
   Contact,
   Login,
   Sidebar,
-  Footer
+  Footer,
+  Feedback
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class Footer {
 
@@ -6,7 +7,7 @@ class Footer {
     return (
       <div className="footer">
         <div className="footer-menu">
-          <div>Feedback</div>
+          <div><Link className="white-link" to="/feedback">Feedback</Link></div>
           <div>About</div>
           <div>FAQ</div>
         </div>

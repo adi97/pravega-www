@@ -27,7 +27,7 @@ class MenubarRight {
   render() {
     return (
       <div className="menubar-right">
-        <div><Link className="white-link"  to="/">Home</Link></div>
+        <div><Link className="white-link" to="/">Home</Link></div>
         <div><Link className="white-link" to="/schedule">Schedule</Link></div>
         <div><Link className="white-link" to="/news">News</Link></div>
         <div><Link className="white-link" to="/hospitality">Hospitality</Link></div>
