@@ -1,0 +1,45 @@
+.contactwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title {
+  width: 100%;
+  height: 1.8rem;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bolder;
+}
+
+.contactbox {
+  border: solid 1px white;
+  padding: 0.6rem;
+  margin: 1rem;
+  text-align: center;
+  width: 13rem;
+  border-radius: 0.5rem;
+  height: 5.17rem;
+}
+
+.name {
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding-bottom: 0.3125rem;
+}
+
+.designation {
+  font-size: 0.8125rem;
+  font-style: oblique;
+  padding-bottom: 0.3125rem;
+}
+
+.email {
+  font-size: 0.9375rem;
+  font-style: italic;
+  padding-bottom: 0.625rem;
+}
+
+.phonenumber {
+  font-size: 1rem;
+}
