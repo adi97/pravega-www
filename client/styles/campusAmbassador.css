@@ -1,0 +1,41 @@
+.ca-title {
+  font-size: 2rem;
+}
+
+.field-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ca-form > div {
+  padding-bottom: 1rem;
+}
+
+
+.ca-description {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.ca-description > div {
+  padding-top: 0.6rem;
+}
+
+.gender-buttons {
+  justify-content: space-between;
+  width: 10.8125rem;
+  height: 2.625rem;
+}
+
+.gender-buttons input {
+  margin-left: 0;
+}
+
+.radio-label-wrapper-wrapper > div {
+  padding-bottom: .4rem;
+}
+
+.ca-form {
+  width: 40%;
+  padding-top: 0.5rem;
+}
