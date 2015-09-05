@@ -5,7 +5,8 @@ import { createHistory } from 'history';
 
 import { Menubar, Home, Schedule, News,
          Hospitality, Sponsors, Contact,
-         Login, Sidebar, Footer, About } from './components';
+         Login, Sidebar, Footer, About,
+         CampusAmbassador } from './components';
 
 import './styles/main.css';
 
@@ -41,6 +42,7 @@ const AppRouter = (
       <Route path="sponsors" component={Sponsors} />
       <Route path="login" component={Login} />
       <Route path="about" component={About}/>
+      <Route path="campusAmbassador" component={CampusAmbassador} />
     </Route>
   </Router>
 );
