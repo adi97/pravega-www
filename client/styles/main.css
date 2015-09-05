@@ -1,14 +1,13 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: hsl(216,  35%, 50%);
   font-size: 1rem;
   font-family: ".SFNSText-Regular", "SFNS Display", "Helvetica Neue",
                "Liberation Sans", Arial, sans-serif;
 }
 
 /*For sticky footer Read this http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer */
-.container {
+.app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -17,7 +16,7 @@ html, body {
 .menubar {
   display: flex;
   justify-content: space-between;
-  border-bottom: solid 1px white;
+  background-color: #C62828;
 }
 
 .menubar-left {
@@ -40,35 +39,45 @@ html, body {
   align-self: center;
 }
 
-.white-link {
-  color: white;
-  text-decoration: none;
+@media (min-width: 1100px) {
+  .content-wrapper {
+    width: 1100px;
+    margin: 0 auto;
+  }
 }
 
 .content-wrapper {
-  display: flex;
-  flex-grow: 1;
-  width: 1200px; /* HACK So that, layout doesn't look flattened on large display.
-                    Take care while redesign for mobile */
-  align-self: center;
+    flex-grow: 1;
 }
 
-.sidebar {
-  margin: 3% 0 0 3%; /* FIXME A totally temporary hack */
-  min-width: 9rem;
+.white-link {
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar-options {
+  background-color: #CCC;
 }
 
 .sidebar-options > div {
   padding: .6rem;
 }
 
+.sidebar-options > div:nth-of-type(2n+1) {
+  background-color: #DDD;
+}
+
+
+.sidebar-options > div:hover {
+  background-color: grey;
+}
+
+
 .sidebar-options > .back {
   text-align: center;
 }
 
 .content {
-  flex-grow: 1;
-  margin: 3%;
   border: solid 1px white;
   background-color: hsl(0, 0%, 95%);
 }
