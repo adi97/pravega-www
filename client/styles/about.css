@@ -1,5 +1,27 @@
+.about-container {
+  padding: 4% 8%;
+  color: #333;
+}
+
+.about-container > div:first-child {
+  border-bottom: solid 2px rgba(0, 0, 0, 0.2);;
+}
+
+.about {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
 .about > div:first-child  {
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
-  padding: 1rem;
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.about > div:nth-child(2) {
+  text-align: justify;
+  font-family: 'Roboto Slab';
+  font-size: 0.92rem;
 }

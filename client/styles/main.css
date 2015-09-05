@@ -1,8 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #303030;
-  color: #FFF;
+  background-color: hsl(216,  35%, 50%);
   font-size: 1rem;
   font-family: ".SFNSText-Regular", "SFNS Display", "Helvetica Neue",
                "Liberation Sans", Arial, sans-serif;
@@ -71,7 +70,7 @@ html, body {
   flex-grow: 1;
   margin: 3%;
   border: solid 1px white;
-  padding: 3%;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .footer {
