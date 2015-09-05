@@ -7,10 +7,13 @@ import Hospitality from './Hospitality.js';
 import Sponsors from './Sponsors.js';
 import Contact from './Contact.js';
 import Login from './Login.js';
+import CampusAmbassador from './CampusAmbassador.js';
 
 import Sidebar from './Sidebar.js';
 import Footer from './Footer.js';
+
 import Feedback from './Feedback.js';
+import About from './About.js';
 
 export {
   Home,
@@ -21,7 +24,9 @@ export {
   Sponsors,
   Contact,
   Login,
+  CampusAmbassador,
   Sidebar,
   Footer,
-  Feedback
+  Feedback,
+  About
 };

@@ -8,7 +8,7 @@ class Footer {
       <div className="footer">
         <div className="footer-menu">
           <div><Link className="white-link" to="/feedback">Feedback</Link></div>
-          <div>About</div>
+          <div><Link className="white-link" to="/about">About</Link></div>
           <div>FAQ</div>
         </div>
         <div className="social-media">
