@@ -16,15 +16,19 @@ class App {
   }
 
   render() {
-    return (
-      <div className="container">
-        <Menubar />
-        <div className="content-wrapper">
-          <Sidebar />
-          <div className="content">
-            {this.props.children}
-          </div>
+    const contentWrapper = (
+      <div className="content-wrapper row">
+        <Sidebar />
+        <div className="content col-md-10 hidden-sm hidden-xs">
+          {this.props.children}
         </div>
+      </div>
+    );
+
+    return (
+      <div className="app-container">
+        <Menubar />
+        {contentWrapper}
         <Footer />
       </div>
     );
