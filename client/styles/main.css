@@ -11,6 +11,7 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .menubar {
@@ -48,6 +49,7 @@ html, body {
 
 .content-wrapper {
     flex-grow: 1;
+    display: flex;
 }
 
 .white-link {
@@ -78,14 +80,12 @@ html, body {
 }
 
 .content {
-  border: solid 1px white;
-  background-color: hsl(0, 0%, 95%);
+  flex-grow: 1;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  border-top: solid 1px white;
 }
 
 .footer-menu {

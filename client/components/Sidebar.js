@@ -28,7 +28,7 @@ class Sidebar extends Component {
     ];
 
     return (
-      <div className="sidebar col-md-2">
+      <div className="sidebar">
         {options[this.state.option]}
       </div>
     );

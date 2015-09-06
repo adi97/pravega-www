@@ -16,11 +16,20 @@ class App {
   }
 
   render() {
+    const content = (
+      <div className="row">
+        {this.props.children}
+      </div>
+    );
+
+    // FIXME content-wrapper has display:flex so columns here don't stack
     const contentWrapper = (
       <div className="content-wrapper row">
-        <Sidebar />
-        <div className="content col-md-10 hidden-sm hidden-xs">
-          {this.props.children}
+        <div className="col-md-2">
+          <Sidebar />
+        </div>
+        <div className="content col-md-10">
+          {content}
         </div>
       </div>
     );

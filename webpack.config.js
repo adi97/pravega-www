@@ -8,8 +8,7 @@ module.exports = {
   devtool: '#eval',
 
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
+    'webpack-hot-middleware/client',
     './client/index'
   ],
   output: {
@@ -20,7 +19,8 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.optimize.OccurenceOrderPlugin()
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.NoErrorsPlugin()
   ],
   resolve: {
     extensions: ['', '.js', '.jsx']
@@ -28,8 +28,8 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js?$/,
-      loaders: ['react-hot', 'babel'],
-      include: path.join(__dirname, 'client')
+      loaders: ['babel'],
+      include: contentBase
     },
     {
       test: /\.css?$/,
