@@ -8,7 +8,7 @@ class Menubar {
     return (
       <div className="menubar">
         <MenubarLeft />
-        <MenubarRight />
+        <MenubarRightenc />
       </div>
     );
   }
@@ -25,12 +25,22 @@ class MenubarLeft {
   }
 }
 
+class MenubarRightenc {
+  render() {
+    return (
+      <div className="menubarrightenc hidden-md-down">
+       <MenubarRight />
+      </div>
+    );
+  }
+}
+
 class MenubarRight {
   render() {
     return (
       <div className="menubar-right">
         <div><Link className="white-link" to="/">Home</Link></div>
-        <div><Link className="white-link" to="/schedule">Schedule</Link></div>
+        <div><Link className="white-link" visible-md-block visible-lg-block to="/schedule">Schedule</Link></div>
         <div><Link className="white-link" to="/news">News</Link></div>
         <div><Link className="white-link" to="/hospitality">Hospitality</Link></div>
         <div><Link className="white-link" to="/sponsors">Sponsor Us</Link></div>

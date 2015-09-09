@@ -31,12 +31,20 @@ html, body {
   align-self: center;
 }
 
+.menubarrightenc {
+  display: flex;
+}
+
 .menubar-right {
   display: flex;
 }
 
+.dummy {
+  display: block;
+}
+
 .menubar-right > div {
-  padding: 0.6rem 1.5rem;
+  padding: 0.6rem 1rem;
   align-self: center;
 }
 
@@ -46,6 +54,11 @@ html, body {
     margin: 0 auto;
   }
 }
+
+.menubarrightenc {
+  display: block;
+}
+
 
 .content-wrapper {
     flex-grow: 1;
